@@ -47,7 +47,7 @@ const NavSec = () => {
         <h2 className="font-bold text-2xl md:text-4xl mt-4">Quality, Comfortable And Affordable Furniture Delivered To Your Doorstep.</h2>
         <p className='mt-4 md:mt-8'>Select and Purchase A Preferred Furniture of Your Choice Without Any Hassle.</p>
         <br />
-        <a href="" className='font-bold mt-4 md:mt-11 bg-brown-500 rounded-md px-6 md:px-9 py-2 hidden md:block' style={{ backgroundColor: '#8B4513' }}>Shop Now</a>
+        <a href="" className='font-bold mt-4 md:mt-11 bg-brown-500 rounded-md px-6 md:px-4 py-2 hidden md:block w-64 ml-44' style={{ backgroundColor: '#8B4513' }}>Shop Now</a>
       </div>
     </div>
   );
