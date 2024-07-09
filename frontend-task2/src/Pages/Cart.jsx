@@ -26,7 +26,7 @@ const Cart = () => {
 
     </div>
 
-    <div className='flex justify-between'>
+    <div className='flex justify-between body bg-white'style={{ backgroundColor: "#FAF9F6" }}>
       <div className='bg-white w-2/3 pt-4 px-7'>
         <div className='flex justify-between '>
         <p className='text-3xl font-bold'>Shopping Cart</p>
@@ -73,7 +73,7 @@ const Cart = () => {
                 <div className='space-y-11'>
                   <p>Wardrobe</p>
                   <p>6 Foot</p>
-                  <div className='p-3 bg-red-400 rounded-full'><img src={close} alt=""className='ml-8 w-5 ' /></div>
+                  <div><img src={close} alt=""className='ml-8 w-5 ' /></div>
                 </div>
 
               </div>
@@ -120,7 +120,7 @@ const Cart = () => {
       
       </div>
 
-      <div className='bg-red-100 w-1/3 p-5'>
+      <div className='bg-red-100 w-1/3 p-5'style={{ backgroundColor: "#f4e6d8" }}>
         <p className='text-3xl font-bold text-center'>Order Summary</p>
         <hr className='border ' />
         <div className='flex justify-between mt-3'>
@@ -151,6 +151,8 @@ const Cart = () => {
           <p>TOTAL PRICE</p>
           <p className='font-bold'>$420</p>
         </div>
+
+        <hr className='mt-2' />
 
         <div className='flex items-center justify-center mt-20'>
         <a href="/checkout" className='bg-brown-500 rounded-md px-9 py-2 text-white font-semibold w-60 text-center'style={{ backgroundColor: '#D27C2C' }}>Checkout</a>
