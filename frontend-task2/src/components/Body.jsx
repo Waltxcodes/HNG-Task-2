@@ -35,13 +35,13 @@ const Body = () => {
         <p className="text-2xl md:text-3xl font-bold text-center mt-8">Our Products</p>
 
         <div className="flex flex-col md:flex-row justify-evenly space-y-4 md:space-y-0 md:space-x-4 lg:space-x-10 mt-6">
-          <div className="px-0 py-1 md:px-4 md:py-2 rounded-md border border-black text-center w-fit mx-auto">
+          <div className="px-0 py-1 md:px-4 md:py-2 rounded-md border border-black text-center">
             <p>New Arrivals</p>
           </div>
-          <div className="px-2 py-1 md:px-4 md:py-2 rounded-md border border-black text-center w-fit mx-auto">
+          <div className="px-2 py-1 md:px-4 md:py-2 rounded-md border border-black text-center">
             <p>Top Rated</p>
           </div>
-          <div className="px-2 py- md:px-4 md:py-2 rounded-md border border-black text-center w-fit mx-auto">
+          <div className="px-2 py- md:px-4 md:py-2 rounded-md border border-black text-center">
             <p>Featured</p>
           </div>
         </div>
