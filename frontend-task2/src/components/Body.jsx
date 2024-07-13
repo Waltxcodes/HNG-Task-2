@@ -83,10 +83,11 @@ const Body = () => {
       <div className="bg-white rounded-md pb-4 shadow-md flex flex-col items-center mx-4">
         {item.photos.length > 0 ? (
           <img
-            src={`https://api.timbu.cloud/images/${item.photos[0].url}`}
-            alt={item.name}
-            className="w-24 h-24 object-cover"
-          />
+          src={`https://api.timbu.cloud/images/${item.photos[0].url}`}
+          alt={item.name}
+          
+          style={{ width: '100%', height: '300px', objectFit: 'cover' }}
+        />
         ) : (
           <p>No image available</p>
         )}
