@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Logo from '../assets/logo.svg'; 
 import ward from '../assets/ward.png';
 import fan from '../assets/fancy.png';
@@ -8,14 +8,32 @@ import count from '../assets/count.png';
 import cards from '../assets/cards.png';
 
 
-
 const Cart = () => {
+
+  const[menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+  
   return (
     <>
-    <div className='bg-brown py-4 flex items-start justify-between 'style={{ backgroundColor: '#5C2C06' }}>
+    <div className='relative'>
+
+    <div className='bg-brown py-4 flex flex-col md:flex-row items-start justify-between 'style={{ backgroundColor: '#5C2C06' }}>
       <div><img src={Logo} alt="woody logo" className=" mt-1 ml-4 " /> </div>
 
-      <nav className="text-white flex space-x-20 mt-8 mr-11 text-lg font-semibold">
+      <div>
+          <img src={Logo} alt="woody logo" className="mt-4 ml-4 md:mt-1" />
+        </div>
+        <div className="md:hidden absolute top-4 right-4">
+          <button onClick={toggleMenu} className="text-white focus:outline-none">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+
+      <nav className="text-white flex-col md:flex-row space-x-20 mt-8 mr-11 text-lg font-semibold hidden">
       <a href="" className='mt-1'>Home</a>
       <a href="" className='mt-1'>Products</a>
       <a href="" className='mt-1 underline'>Cart</a>
@@ -26,10 +44,20 @@ const Cart = () => {
 
     </div>
 
+    <nav className={`text-white absolute top-20 left-0 w-full bg-black bg-opacity-75 flex space-x-20 mt-8 mr-11 text-lg font-semibold md:hidden flex-col ${menuOpen ? 'block' : 'hidden'}`}>
+      <a href="" className='mt-1'>Home</a>
+      <a href="" className='mt-1'>Products</a>
+      <a href="" className='mt-1 underline'>Cart</a>
+      <a href="" className='mt-1'>Blog</a>
+      <a href="" className='mt-1'>Contact Us</a>
+      <a href="" className='bg-brown-500 rounded-md px-9 py-2'style={{ backgroundColor: '#D27C2C' }}>Back</a>
+      </nav>
+    </div>
+
     <div className='flex justify-between body bg-white'style={{ backgroundColor: "#FAF9F6" }}>
       <div className='bg-white w-2/3 pt-4 px-7'>
         <div className='flex justify-between '>
-        <p className='text-3xl font-bold'>Shopping Cart</p>
+        <p className='text-3xl font-bold'>Shopping Cart</p>  
         <p className='text-2xl'>3 Items</p>
         </div>
         <hr className='mt-1' />

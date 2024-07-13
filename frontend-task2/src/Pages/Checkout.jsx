@@ -3,10 +3,13 @@ import Logo from '../assets/logo.svg';
 import check from '../assets/check.png'; 
 
 const Checkout = () => {
+
+  
   return (
     <>
     <div className='bg-brown py-4 flex items-start justify-between 'style={{ backgroundColor: '#5C2C06' }}>
       <div><img src={Logo} alt="woody logo" className=" mt-1 ml-4 " /> </div>
+      
 
       <nav className="text-white flex space-x-20 mt-8 mr-11 text-lg font-semibold">
       <a href="" className='mt-1'>Home</a>

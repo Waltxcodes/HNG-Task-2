@@ -44,7 +44,7 @@ const NavSec = () => {
         <a href="" className='bg-brown-500 rounded-md px-6 py-2' style={{ backgroundColor: '#8B4513' }}>Shop Now</a>
       </nav>
       <div className={`text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white px-4 ${menuOpen ? 'mt-48 md:mt-0' : ''}`}>
-        <h2 className="font-bold text-2xl md:text-4xl mt-4">Quality, Comfortable And Affordable Furniture Delivered To Your Doorstep.</h2>
+        <h2 className="font-semi-bold text-2xl md:text-4xl mt-4">Quality, Comfortable And Affordable Furniture Delivered To Your Doorstep.</h2>
         <p className='mt-4 md:mt-8'>Select and Purchase A Preferred Furniture of Your Choice Without Any Hassle.</p>
         <br />
         <a href="" className='font-bold mt-4 md:mt-11 bg-brown-500 rounded-md px-6 md:px-4 py-2 hidden md:block w-64 ml-44' style={{ backgroundColor: '#8B4513' }}>Shop Now</a>
